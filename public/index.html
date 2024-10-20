@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Checker</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <header>
+        <h1>AI-Powered Symptom Checker</h1>
+    </header>
+    <main class="main-content">
+        <section class="form-section">
+            <form id="symptomForm">
+                <label for="symptoms">Enter your symptoms:</label>
+                <input type="text" id="symptoms" name="symptoms" required placeholder="E.g. Fever, cough">
+                <button type="submit">Check Symptoms</button>
+            </form>
+        </section>
+
+        <section class="result-section">
+            <table id="resultTable" style="display:none;">
+                <thead>
+                    <tr>
+                        <th>Disease</th>
+                        <th>Medicines</th>
+                        <th>Precautions</th>
+                        <th>Workout</th>
+                        <th>Diet</th>
+                    </tr>
+                </thead>
+                <tbody id="resultBody"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Symptom Checker | All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
